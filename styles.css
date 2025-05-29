@@ -22,6 +22,7 @@
     --accent: #A79BF2;
     --light: #F2F2F2;
     --lighttrans: rgba(242, 242, 242, .15);
+    --lighttrans2: rgba(242, 242, 242, .6)
 }
 
 body {
@@ -43,7 +44,7 @@ button {
     margin: 25px;
     padding: 1em 2em;
     color: var(--light);
-    width: 25rem;
+    max-width: 25rem;
     font-family: "Amarante", serif;
     font-size: 1.5rem;
 }
@@ -51,14 +52,14 @@ button {
 .pulse:hover {
     animation: pulse .89s;
     box-shadow: 0 0 0 .8em transparent;
-    background-color: var(--buttoncolor2);
+    background-color: rgba(206, 123, 221, 0.3);
     color: var(--light);
     border: 2px solid var(--light);
 }
 
 
 @keyframes pulse {
-    0% { box-shadow: 0 0 0 3px var(--buttoncolor); }
+    0% { box-shadow: 0 0 0 3px var(--light); }
 }
 
 #button {
@@ -66,6 +67,7 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 25px;
 }
 
 h1 {
@@ -75,15 +77,19 @@ h1 {
 
 #message {
     font-size: 4rem;
-    margin-top: 10vh;
+    margin: 25px;
     font-family: "Tangerine", cursive;
-    height: 15vh;
-
+    min-height: 25vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
 }
 
 .card {
     display: flex;
-    border: 1px solid var(--light);
+    border: 1px solid var(--lighttrans2);
     border-radius: 25px;
     margin: 50px;
     background-color: var(--lighttrans);
@@ -91,6 +97,9 @@ h1 {
     flex-direction: column;
     align-content: center;
     align-items: center;
-    width: 80vw;
+    width: 70vw;
+}
+.messagecontainer {
+
 }
 
