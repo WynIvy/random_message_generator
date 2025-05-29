@@ -46,7 +46,7 @@ body {
     color: var(--light);
     font-family: "EB Garamond", serif;
     height: 100vh;
-    overflow-y: hidden;
+    overflow-y: auto;
 }
 
 button {
