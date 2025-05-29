@@ -1,10 +1,27 @@
+.amarante-regular {
+    font-family: "Amarante", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.tangerine-regular {
+    font-family: "Tangerine", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.tangerine-bold {
+    font-family: "Tangerine", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+
 :root {
     --maincolor: #1A1A1A;
     --buttoncolor: #65A0C2;
     --buttoncolor2: #65A0C2;
     --accent: #A79BF2;
     --light: #F2F2F2;
-    --lighttrans: rgba(242, 242, 242, .25);
+    --lighttrans: rgba(242, 242, 242, .15);
 }
 
 body {
@@ -14,7 +31,7 @@ body {
     justify-items: center;
     text-align: center;
     color: var(--light);
-    font-family: sans-serif;
+    font-family: "Tangerine", cursive;
     height: 100vh;
 }
 
@@ -23,11 +40,12 @@ button {
     border: 2px solid var(--light);
     border-radius: 10px;
     line-height: 1;
-    margin: 2em;
+    margin: 25px;
     padding: 1em 2em;
     color: var(--light);
-    width: 15rem;
-    font-family: monospace;
+    width: 25rem;
+    font-family: "Amarante", serif;
+    font-size: 1.5rem;
 }
 
 .pulse:hover {
@@ -51,13 +69,16 @@ button {
 }
 
 h1 {
-    font-family: monospace;
-    font-size: 3rem;
+    font-family: "Amarante", serif;
+    font-size: 2.5rem;
 }
 
 #message {
-    font-size: 2rem;
+    font-size: 4rem;
     margin-top: 10vh;
+    font-family: "Tangerine", cursive;
+    height: 15vh;
+
 }
 
 .card {

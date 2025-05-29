@@ -3,7 +3,10 @@ const messages = [
     {id: 2, quote: "The Moon is watching."},
     {id: 3, quote: "Mercury is fucking with you again."},
     {id: 4, quote: "Saturn has the last laugh."},
-    {id: 5, quote: "Jupiter is .... trying"}
+    {id: 5, quote: "Jupiter is .... trying"},
+    {id: 6, quote: "Pisces is sexy"},
+    {id: 7, quote: "Venus is delicious"},
+    {id: 8, quote: "Jupiter wants to hug you"}
     ]
 
 document.addEventListener('DOMContentLoaded', function() {
