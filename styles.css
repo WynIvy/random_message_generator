@@ -22,8 +22,8 @@
 
 :root {
     --maincolor: #1A1A1A;
-    --buttoncolor: #3B5387;
-    --buttoncolor2: #6fc3e2;
+    --buttoncolor: #1d3c7f;
+    --buttoncolor2: #7392d5;
     --accent: #1d63dd;
     --light: #F2F2F2;
     --lighttrans: rgba(242, 242, 242, .1);
@@ -115,11 +115,13 @@ h3 {
     align-content: center;
     align-items: center;
     width: 70vw;
-    padding: 10px 25px;
+    padding: 10px 10px;
 }
 .messagecontainer {
     height: 50vh;
     overflow-y: auto;
-
+    scroll-behavior: smooth;
+    scrollbar-color: var(--buttoncolor2) var(--buttoncolor);
+    scrollbar-width: thin;
 }
 
