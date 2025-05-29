@@ -1,39 +1,44 @@
-.amarante-regular {
-    font-family: "Amarante", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-.tangerine-regular {
-    font-family: "Tangerine", cursive;
+.cinzel-decorative-regular {
+    font-family: "Cinzel Decorative", serif;
     font-weight: 400;
     font-style: normal;
 }
 
-.tangerine-bold {
-    font-family: "Tangerine", cursive;
+.cinzel-decorative-bold {
+    font-family: "Cinzel Decorative", serif;
     font-weight: 700;
     font-style: normal;
 }
 
+.cinzel-decorative-black {
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+.eb-garamond {
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+}
+
 :root {
     --maincolor: #1A1A1A;
-    --buttoncolor: #65A0C2;
-    --buttoncolor2: #65A0C2;
-    --accent: #A79BF2;
+    --buttoncolor: #3B5387;
+    --buttoncolor2: #6fc3e2;
+    --accent: #1d63dd;
     --light: #F2F2F2;
-    --lighttrans: rgba(242, 242, 242, .15);
+    --lighttrans: rgba(242, 242, 242, .1);
     --lighttrans2: rgba(242, 242, 242, .6)
 }
 
 body {
-    background: linear-gradient(140deg,rgba(46, 22, 34, 1) 0%, rgba(159, 78, 173, 1) 52%, rgba(115, 227, 235, 1) 100%);
+    background: linear-gradient(140deg,rgba(20, 17, 36, 1) 0%, rgba(11, 42, 115, 1) 50%, rgba(27, 76, 181, 1) 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
     justify-content: center;
     justify-items: center;
     text-align: center;
     color: var(--light);
-    font-family: "Tangerine", cursive;
+    font-family: "EB Garamond", serif;
     height: 100vh;
 }
 
@@ -41,19 +46,21 @@ button {
     background: none;
     border: 2px solid var(--light);
     border-radius: 10px;
-    line-height: 1;
+    line-height: 1.2rem;
     margin: 25px;
     padding: 1em 2em;
     color: var(--light);
     max-width: 25rem;
-    font-family: "Amarante", serif;
-    font-size: 1.5rem;
+    font-family: "Cinzel Decorative", serif;
+    font-size: 1rem;
+    align-items: center;
+    align-content: center;
 }
 
 .pulse:hover {
     animation: pulse .89s;
     box-shadow: 0 0 0 .8em transparent;
-    background-color: rgba(206, 123, 221, 0.3);
+    background-color: var(--buttoncolor);
     color: var(--light);
     border: 2px solid var(--light);
 }
@@ -68,23 +75,24 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 25px;
 }
 
 h1 {
-    font-family: "Amarante", serif;
-    font-size: 2.5rem;
+    font-family: "Cinzel Decorative", serif;
+    font-size: 3rem;
+    margin-bottom: 10px;
 }
 
 h3 {
-    font-family: "Amarante", serif;
-    font-size: 1.2rem;
+    font-family: "Cinzel Decorative", serif;
+    font-size: .9rem;
+    font-weight: normal;
 }
 
 #message {
     font-size: 1.3rem;
-    margin: 25px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 20px;
+    font-family: "EB Garamond", serif;
     min-height: 25vh;
     display: flex;
     justify-content: center;
@@ -100,15 +108,18 @@ h3 {
     display: flex;
     border: 1px solid var(--lighttrans2);
     border-radius: 25px;
-    margin: 50px;
+    margin: 20px;
     background-color: var(--lighttrans);
     justify-content: center;
     flex-direction: column;
     align-content: center;
     align-items: center;
     width: 70vw;
+    padding: 10px 25px;
 }
 .messagecontainer {
+    height: 50vh;
+    overflow-y: auto;
 
 }
 
