@@ -1,0 +1,75 @@
+:root {
+    --maincolor: #1A1A1A;
+    --buttoncolor: #65A0C2;
+    --buttoncolor2: #65A0C2;
+    --accent: #A79BF2;
+    --light: #F2F2F2;
+    --lighttrans: rgba(242, 242, 242, .25);
+}
+
+body {
+    background: linear-gradient(140deg,rgba(46, 22, 34, 1) 0%, rgba(159, 78, 173, 1) 52%, rgba(115, 227, 235, 1) 100%);
+    background-repeat: no-repeat;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    color: var(--light);
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+button {
+    background: none;
+    border: 2px solid var(--light);
+    border-radius: 10px;
+    line-height: 1;
+    margin: 2em;
+    padding: 1em 2em;
+    color: var(--light);
+    width: 15rem;
+    font-family: monospace;
+}
+
+.pulse:hover {
+    animation: pulse .89s;
+    box-shadow: 0 0 0 .8em transparent;
+    background-color: var(--buttoncolor2);
+    color: var(--light);
+    border: 2px solid var(--light);
+}
+
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 3px var(--buttoncolor); }
+}
+
+#button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: monospace;
+    font-size: 3rem;
+}
+
+#message {
+    font-size: 2rem;
+    margin-top: 10vh;
+}
+
+.card {
+    display: flex;
+    border: 1px solid var(--light);
+    border-radius: 25px;
+    margin: 50px;
+    background-color: var(--lighttrans);
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    width: 80vw;
+}
+
