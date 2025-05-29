@@ -28,6 +28,7 @@
 body {
     background: linear-gradient(140deg,rgba(46, 22, 34, 1) 0%, rgba(159, 78, 173, 1) 52%, rgba(115, 227, 235, 1) 100%);
     background-repeat: no-repeat;
+    background-attachment: fixed;
     justify-content: center;
     justify-items: center;
     text-align: center;
@@ -75,16 +76,24 @@ h1 {
     font-size: 2.5rem;
 }
 
+h3 {
+    font-family: "Amarante", serif;
+    font-size: 1.2rem;
+}
+
 #message {
-    font-size: 4rem;
+    font-size: 1.3rem;
     margin: 25px;
-    font-family: "Tangerine", cursive;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     min-height: 25vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-content: center;
     align-items: center;
+    text-align: left;
+    line-height: 1.5rem;
+    text-wrap-mode: balance;
 }
 
 .card {
